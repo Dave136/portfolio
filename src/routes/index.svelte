@@ -7,7 +7,7 @@
   <meta name="description" content="My personal portfolio" />
 </svelte:head>
 
-<section class="flex flex-col justify-center items-center mt-4">
+<section class="flex flex-col justify-center items-center mt-20">
   <picture>
     <source srcset="me.jpg" media="(min-width: 800px)" />
     <img class="rounded-full w-48 h-48 object-cover" src="me.jpg" alt="Me" />

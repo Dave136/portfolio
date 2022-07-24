@@ -10,6 +10,5 @@
     <a href="/" on:click><li class="p-6 text-2xl">Home</li></a>
     <a href="/projects" on:click><li class="p-6 text-2xl">Projects</li></a>
     <a href="/about" on:click><li class="p-6 text-2xl">About</li></a>
-    <a href="/contact" on:click><li class="p-6 text-2xl">Contact</li></a>
   </ul>
 </div>
