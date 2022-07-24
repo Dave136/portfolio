@@ -26,7 +26,7 @@
       <button class="px-3 py-2 bg-black rounded-full">🌙</button>
     </nav> -->
   <div
-    class="w-20 h-20 rounded-full flex justify-center items-center absolute right-16 top-0 transition-colors active:bg-zinc-700"
+    class="w-20 h-20 rounded-full flex justify-center items-center absolute right-16 top-0 transition-colors active:bg-zinc-700 z-10"
     on:click={toogleDark}
   >
     <div class="w-10 h-10">
@@ -38,5 +38,5 @@
     </div>
   </div>
   <Burger on:click={() => (isOpen = !isOpen)} />
-  <Menu {isOpen} />
+  <Menu {isOpen} on:click={() => (isOpen = !isOpen)} />
 </header>
