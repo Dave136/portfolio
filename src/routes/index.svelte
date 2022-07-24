@@ -13,4 +13,7 @@
     <img class="rounded-full w-48 h-48 object-cover" src="me.jpg" alt="Me" />
   </picture>
   <h3 class="text-4xl mt-10">Hi! I'm David</h3>
+  <p class="mt-6 text-xl text-center">
+    Fullstack developer 💻 <br /> Using Typescript 😃
+  </p>
 </section>
