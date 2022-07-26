@@ -47,21 +47,23 @@
 </svelte:head>
 
 <section class="px-8 flex flex-col items-center">
-  <picture class="mt-8">
+  <picture class="mt-8 sm:mt-16 lg:mt-8">
     <source srcset="me2.jpg" media="(min-width: 800px)" />
-    <img class="rounded-full w-48 h-48 object-cover" src="me2.jpg" alt="Me" />
+    <img class="rounded-full w-48 h-48 sm:w-64 sm:h-64 object-cover" src="me2.jpg" alt="Me" />
   </picture>
-  <p class="text-lg mt-12">
-    <span class="text-2xl font-semibold">Hi!</span> My name is David, I am 22 years old, full stack programmer,
-    passionate about the world of technology, lover of music and programming. I love Linux, I script
-    in python and I'm learning Rust.
+  <p class="text-lg mt-12 sm:w-11/12 lg:mt-4 lg:w-9/12">
+    <span class="text-2xl font-normal">Hi!</span> My name is David, i am 22 years old, full stack programmer,
+    passionate about the world of technology, lover of music and programming. I love Linux, i script
+    with python or bash and i'm learning Rust.
   </p>
-  <div class="w-[80%] min-h-full ml-auto mr-auto grid grid-cols-3 gap-8 mt-20">
+  <div
+    class="w-[80%] min-h-full ml-auto mr-auto grid grid-cols-3 gap-8 mt-20 sm:mt-14 lg:mt-10 lg:grid-flow-col"
+  >
     {#each logos as logo}
       <div class="flex justify-center">
         <picture>
           <img
-            class="w-20 h-20 p-4 bg-secondary shadow-lg dark:bg-third-alt rounded-lg"
+            class="w-20 h-20 sm:w-32 sm:h-32 p-4 bg-secondary dark:bg-secondary-alt shadow-2xl rounded-lg"
             src={logo.src}
             alt={logo.alt}
           />

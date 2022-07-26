@@ -29,7 +29,7 @@
   export let key: string;
 </script>
 
-<div class="w-full ml-auto mr-auto min-h-screen relative overflow-hidden m:w-2/3">
+<div class="w-full ml-auto mr-auto min-h-screen relative overflow-hidden m:w-2/3 lg:w-3/4">
   <Header />
   <Transition refresh={key}>
     <main>

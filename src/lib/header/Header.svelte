@@ -1,5 +1,5 @@
 <script>
-  import Menu from '$lib/components/Menu.svelte';
+  import MobileMenu from '$lib/components/mobile-menu.svelte';
   import Burger from './Burger.svelte';
   import Sun from 'svelte-icons/io/IoIosSunny.svelte';
   import Moon from 'svelte-icons/io/IoIosMoon.svelte';
@@ -21,12 +21,13 @@
 
 <header class="flex py-6 m:py-12 justify-between items-center">
   <h3 class="text-2xl m:text-3xl z-10 ml-8">Dave136</h3>
-  <!-- <nav>
-      <a href="/" class="mr-2">Home</a>
-      <button class="px-3 py-2 bg-black rounded-full">🌙</button>
-    </nav> -->
+  <nav class="hidden mr-20 lg:block">
+    <a href="/" class="text-lg mr-4">Home</a>
+    <a href="/projects" class="text-lg mr-4">Projects</a>
+    <a href="/about" class="text-lg mr-4">About</a>
+  </nav>
   <div
-    class="w-20 h-20 rounded-full flex justify-center items-center absolute right-16 top-0 transition-colors active:bg-zinc-700 z-10"
+    class="w-20 h-20 rounded-full flex justify-center items-center absolute right-16 lg:right-4 top-0 transition-colors active:bg-zinc-700 z-10"
     on:click={toogleDark}
   >
     <div class="w-10 h-10">
@@ -38,5 +39,5 @@
     </div>
   </div>
   <Burger on:click={() => (isOpen = !isOpen)} />
-  <Menu {isOpen} on:click={() => (isOpen = !isOpen)} />
+  <MobileMenu {isOpen} on:click={() => (isOpen = !isOpen)} />
 </header>

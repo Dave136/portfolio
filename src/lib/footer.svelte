@@ -4,22 +4,14 @@
   import LinkedIn from 'svelte-icons/io/IoLogoLinkedin.svelte';
   // import Twitter from 'svelte-icons/io/IoLogoTwitter.svelte';
   import Info from 'svelte-icons/io/IoIosInformationCircle.svelte';
-  import AddCircle from 'svelte-icons/io/IoIosAddCircle.svelte';
 
   import Email from 'svelte-icons/io/IoIosMail.svelte';
   import Whatsapp from 'svelte-icons/io/IoLogoWhatsapp.svelte';
 
   let showInfo = false;
-  let showMore = false;
 
   const toggleInfo = () => {
-    if (showMore) showMore = false;
     showInfo = !showInfo;
-  };
-
-  const toggleMore = (e: MouseEvent) => {
-    if (showInfo) showInfo = false;
-    showMore = !showMore;
   };
 </script>
 
@@ -37,25 +29,15 @@
   </div>
 {/if}
 
-{#if showMore}
-  <div class="flex justify-center">
-    <div
-      class="bg-secondary dark:bg-secondary-alt p-4 absolute flex bottom-28 w-auto ml-auto mr-auto rounded-md"
-      in:fly={{ delay: 100, duration: 200, y: -10 }}
-      out:fly={{ duration: 100, y: 10 }}
+<footer class="absolute bottom-12 flex w-full justify-center">
+  <div class="flex justify-between items-center w-full px-16 sm:w-4/5 lg:w-1/2">
+    <a href="https://github.com/Dave136" target="_blank" class="w-8 h-8"><Github /></a>
+    <a href="https://www.linkedin.com/in/david-arenas-72761b170/" target="_blank" class="w-8 h-8"
+      ><LinkedIn /></a
     >
-      <span class="w-8 h-8 mr-6"><Email /></span>
-      <span class="w-8 h-8"><Whatsapp /></span>
-    </div>
+    <!-- <a href="https://twitter.com/davejs4" target="_blank" class="w-8 h-8"><Twitter /></a> -->
+    <span class="w-8 h-8"><Email /></span>
+    <span class="w-8 h-8"><Whatsapp /></span>
+    <span class="w-8 h-8" on:click|preventDefault={toggleInfo}><Info /></span>
   </div>
-{/if}
-
-<footer class="absolute bottom-12 flex w-full justify-evenly px-10 ">
-  <a href="https://github.com/Dave136" target="_blank" class="w-8 h-8"><Github /></a>
-  <a href="https://www.linkedin.com/in/david-arenas-72761b170/" target="_blank" class="w-8 h-8"
-    ><LinkedIn /></a
-  >
-  <!-- <a href="https://twitter.com/davejs4" target="_blank" class="w-8 h-8"><Twitter /></a> -->
-  <span class="w-8 h-8" on:click|preventDefault={toggleInfo}><Info /></span>
-  <span class="w-8 h-8" on:click|preventDefault={toggleMore}><AddCircle /></span>
 </footer>
