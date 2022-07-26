@@ -3,7 +3,7 @@
 </script>
 
 <div
-  class="absolute w-full min-h-full top-0 bg-zinc-200 dark:bg-zinc-900 p-8 transition-transform z-[1]"
+  class="absolute w-full min-h-full top-0 bg-zinc-200 dark:bg-zinc-900 p-8 transition-transform z-[5]"
   class:-translate-x-full={!isOpen}
 >
   <ul class="flex flex-col items-center justify-center mt-52">

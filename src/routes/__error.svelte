@@ -10,7 +10,7 @@
 
 <script lang="ts">
   import Sad from 'svelte-icons/io/IoIosSad.svelte';
-  export let title: string;
+  // export let title: string;
 </script>
 
 <section class="w-full p-8 flex flex-col justify-center items-center">
