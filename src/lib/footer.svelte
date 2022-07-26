@@ -26,7 +26,7 @@
 {#if showInfo}
   <div class="flex justify-center">
     <div
-      class="bg-zinc-300 dark:bg-zinc-700 p-4 absolute block bottom-28 w-auto ml-auto mr-auto rounded-md"
+      class="bg-secondary dark:bg-secondary-alt p-4 absolute block bottom-28 w-auto ml-auto mr-auto rounded-md"
       in:fly={{ delay: 100, duration: 200, y: -10 }}
       out:fly={{ duration: 100, y: 10 }}
     >
@@ -40,7 +40,7 @@
 {#if showMore}
   <div class="flex justify-center">
     <div
-      class="bg-zinc-300 dark:bg-zinc-700 p-4 absolute flex bottom-28 w-auto ml-auto mr-auto rounded-md"
+      class="bg-secondary dark:bg-secondary-alt p-4 absolute flex bottom-28 w-auto ml-auto mr-auto rounded-md"
       in:fly={{ delay: 100, duration: 200, y: -10 }}
       out:fly={{ duration: 100, y: 10 }}
     >

@@ -60,7 +60,11 @@
     {#each logos as logo}
       <div class="flex justify-center">
         <picture>
-          <img class="w-20 h-20 p-4 bg-zinc-600 rounded-lg" src={logo.src} alt={logo.alt} />
+          <img
+            class="w-20 h-20 p-4 bg-secondary shadow-lg dark:bg-third-alt rounded-lg"
+            src={logo.src}
+            alt={logo.alt}
+          />
         </picture>
       </div>
     {/each}

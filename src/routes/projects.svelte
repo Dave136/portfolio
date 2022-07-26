@@ -21,19 +21,19 @@
 <template>
   <section class="px-8 mt-8">
     <h3 class="text-3xl">My projects</h3>
-    <div class="flex flex-col bg-zinc-100 dark:bg-zinc-800 m-auto p-auto mt-16 z-0">
+    <div class="flex flex-col bg-primary dark:bg-primary-alt m-auto p-auto mt-16 z-0">
       <div class="flex overflow-x-scroll pb-10 hide-scroll-bar snap-proximity">
         <div class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 ">
           {#each projects as project}
             <div class="inline-block px-3">
               <div
-                class="w-96 h-96 max-w-xs overflow-hidden rounded-lg shadow-md bg-white dark:bg-zinc-700 hover:shadow-xl transition-shadow duration-300 ease-in-out relative"
+                class="w-96 h-96 max-w-xs overflow-hidden rounded-lg shadow-md bg-secondary dark:bg-secondary-alt hover:shadow-xl transition-shadow duration-300 ease-in-out relative"
               >
                 <p class="p-4 text-center">{project.content}</p>
                 <div class="absolute bottom-4 w-full">
                   {#each project.tags as tag}
                     <span
-                      class="p-2 inline-flex text-xs flex-wrap ml-4 mb-2 rounded-md bg-zinc-200 dark:bg-zinc-600 gap-4"
+                      class="p-2 inline-flex text-xs flex-wrap ml-4 mb-2 rounded-md bg-third dark:bg-third-alt gap-4"
                       >{tag}</span
                     >
                   {/each}

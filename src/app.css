@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-100 text-black transition-colors dark:bg-zinc-800 dark:text-white;
+  @apply bg-primary text-primary transition-colors dark:bg-primary-alt dark:text-primary-alt;
 }
