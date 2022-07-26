@@ -5,7 +5,7 @@
   import Moon from 'svelte-icons/io/IoIosMoon.svelte';
   import { page } from '$app/stores';
 
-  let isDark = true;
+  let isDark = false;
   let isOpen = false;
 
   const toogleDark = () => {
