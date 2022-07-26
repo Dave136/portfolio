@@ -5,21 +5,21 @@
   // TODO: integrate with github
   let projects = [
     {
-      name: 'Connectable',
+      name: 'Connectable 🚧',
       content: 'GUI client for postgresSQL',
       tags: ['Rust', 'Tauri', 'Svelte', 'DaisyUI'],
       image: 'connectable-app.png',
       link: 'https://github.com/Dave136/connectable',
     },
     {
-      name: 'Compr',
+      name: 'Compr 🚧',
       content: 'Post app made with Nestjs, Sveltekit and monorepo pnpm system',
       tags: ['Nestjs', 'Backend', 'SvelteKit', 'UnoCSS'],
       image: 'compr-app.png',
       link: 'https://github.com/Dave136/compr',
     },
     {
-      name: 'Switch-env',
+      name: 'Switch-env 🚀',
       content: 'Simple CLI for switch between environments',
       tags: ['Rust', 'Clap'],
       image: 'switch-app.png',
