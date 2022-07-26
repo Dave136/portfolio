@@ -44,8 +44,8 @@
       in:fly={{ delay: 100, duration: 200, y: -10 }}
       out:fly={{ duration: 100, y: 10 }}
     >
-      <a href="_" target="_blank" class="w-8 h-8 mr-6"><Email /></a>
-      <a href="_" target="_blank" class="w-8 h-8"><Whatsapp /></a>
+      <span class="w-8 h-8 mr-6"><Email /></span>
+      <span class="w-8 h-8"><Whatsapp /></span>
     </div>
   </div>
 {/if}
@@ -56,6 +56,6 @@
     ><LinkedIn /></a
   >
   <!-- <a href="https://twitter.com/davejs4" target="_blank" class="w-8 h-8"><Twitter /></a> -->
-  <a href="_" class="w-8 h-8" on:click|preventDefault={toggleInfo}><Info /></a>
-  <a href="_" class="w-8 h-8" on:click|preventDefault={toggleMore}><AddCircle /></a>
+  <span class="w-8 h-8" on:click|preventDefault={toggleInfo}><Info /></span>
+  <span class="w-8 h-8" on:click|preventDefault={toggleMore}><AddCircle /></span>
 </footer>
