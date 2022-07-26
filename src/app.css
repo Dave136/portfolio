@@ -4,4 +4,5 @@
 
 body {
   @apply bg-primary text-primary transition-colors dark:bg-primary-alt dark:text-primary-alt;
+  font-family: 'Quicksand', sans-serif;
 }
