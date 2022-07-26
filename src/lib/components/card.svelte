@@ -9,7 +9,7 @@
 <a href={link}>
   <div class="inline-block px-3">
     <div
-      class="w-96 h-96 sm:w-[26rem] sm:h-[26rem] lg:w-96 lg:h-96 max-w-xs overflow-hidden flex flex-col justify-start rounded-lg shadow-md bg-secondary text-secondary dark:bg-secondary-alt hover:shadow-xl transition-shadow duration-300 ease-in-out relative"
+      class="w-96 h-96 sm:w-[26rem] sm:h-[26rem] lg:w-96 lg:h-96 max-w-xs overflow-hidden flex flex-col justify-start rounded-lg shadow-md bg-secondary dark:bg-secondary-alt hover:shadow-xl transition-shadow duration-300 ease-in-out relative"
     >
       <div style="background-image: url({image});" class="w-full h-40 bg-cover bg-left" />
       <h4 class="text-center text-xl mt-4 underline relative z-[1]">{name}</h4>

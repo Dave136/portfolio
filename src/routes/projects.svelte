@@ -25,6 +25,13 @@
       image: 'switch-app.png',
       link: 'https://github.com/Dave136/switch-env',
     },
+    {
+      name: 'v-notes 🚀',
+      content: 'Simple and minimalist notes app',
+      tags: ['Vue3', 'TailwindCSS', 'Pinia', 'Vite'],
+      image: 'v-notes.png',
+      link: 'https://github.com/Dave136/v-notes',
+    },
   ];
 </script>
 
