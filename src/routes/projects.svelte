@@ -36,8 +36,8 @@
 </script>
 
 <template>
-  <section class="px-8 mt-8 sm:mt-16 lg:mt-4">
-    <h3 class="text-3xl text-center">My projects</h3>
+  <section class="px-8 mt-4 sm:mt-10 lg:mt-4">
+    <h3 class="text-2xl text-center sm:text-3xl">My projects</h3>
     <CardWrapper>
       {#each projects as project}
         <Card {...project} />

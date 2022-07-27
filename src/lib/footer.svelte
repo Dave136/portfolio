@@ -29,8 +29,8 @@
   </div>
 {/if}
 
-<footer class="absolute bottom-12 flex w-full justify-center">
-  <div class="flex justify-between items-center w-full px-16 sm:w-4/5 lg:w-1/2">
+<footer class="absolute bottom-8 flex w-full justify-center">
+  <div class="flex justify-between items-center w-full px-12 sm:w-4/5 lg:w-1/2">
     <a href="https://github.com/Dave136" target="_blank" class="w-8 h-8"><Github /></a>
     <a href="https://www.linkedin.com/in/david-arenas-72761b170/" target="_blank" class="w-8 h-8"
       ><LinkedIn /></a

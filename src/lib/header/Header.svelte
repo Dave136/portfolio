@@ -23,18 +23,17 @@
 <header class="flex py-6 m:py-12 justify-between items-center">
   <h3 class="text-2xl m:text-3xl z-10 ml-8">Dave136</h3>
   <nav class="hidden mr-20 lg:block">
-    <a href="/" class="text-lg mr-4" class:underline={$page.url.pathname === '/'}>Home</a>
-    <a href="/projects" class="text-lg mr-4" class:underline={$page.url.pathname === '/projects'}
+    <a href="/" class="mr-4" class:underline={$page.url.pathname === '/'}>Home</a>
+    <a href="/projects" class="mr-4" class:underline={$page.url.pathname === '/projects'}
       >Projects</a
     >
-    <a href="/about" class="text-lg mr-4" class:underline={$page.url.pathname === '/about'}>About</a
-    >
+    <a href="/about" class="mr-4" class:underline={$page.url.pathname === '/about'}>About</a>
   </nav>
   <div
     class="w-20 h-20 rounded-full flex justify-center items-center absolute right-16 lg:right-4 top-0 transition-colors active:bg-zinc-700 z-10"
     on:click={toogleDark}
   >
-    <div class="w-10 h-10">
+    <div class="w-8 h-8">
       {#if isDark}
         <Sun />
       {:else}
