@@ -5,7 +5,7 @@
   import Moon from 'svelte-icons/io/IoIosMoon.svelte';
   import { page } from '$app/stores';
 
-  let isDark = false;
+  export let isDark = false;
   let isOpen = false;
 
   const toogleDark = () => {
@@ -21,7 +21,7 @@
 </script>
 
 <header class="flex py-6 m:py-12 justify-between items-center">
-  <h3 class="text-2xl m:text-3xl z-10 ml-8">Dave136</h3>
+  <a href="/"><h3 class="text-2xl m:text-3xl z-10 ml-8">Dave136</h3></a>
   <nav class="hidden mr-20 lg:block">
     <a href="/" class="mr-4" class:underline={$page.url.pathname === '/'}>Home</a>
     <a href="/projects" class="mr-4" class:underline={$page.url.pathname === '/projects'}
