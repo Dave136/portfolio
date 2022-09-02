@@ -1,24 +1,18 @@
-<script lang="ts" context="module">
-  import type { Load } from '@sveltejs/kit';
-
-  export const load: Load = async ({ url }) => ({
-    props: {
-      key: url,
-    },
-  });
-</script>
-
 <script lang="ts">
+  // throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
   import Footer from '$lib/footer.svelte';
   import Header from '$lib/header/Header.svelte';
   import Transition from '$lib/transition.svelte';
   import { onMount } from 'svelte';
+  import { getLocaleFromNavigator, locale } from 'svelte-i18n';
   import '../app.css';
 
   let isDark = false;
+  let currentLocale = '';
   export let key: string;
 
-  onMount(() => {
+  const getTheme = () => {
     if (
       localStorage.getItem('theme') === 'dark' ||
       (!localStorage.getItem('theme') && window.matchMedia('prefers-color-scheme: dark').matches)
@@ -29,11 +23,25 @@
       isDark = false;
       document.documentElement.classList.remove('dark');
     }
+  };
+
+  const getLocale = () => {
+    const localeFromStorage = localStorage.getItem('locale');
+    if (localeFromStorage) {
+      locale.set(localeFromStorage);
+    }
+
+    currentLocale = localeFromStorage || getLocaleFromNavigator() || 'en-US';
+  };
+
+  onMount(() => {
+    getTheme();
+    getLocale();
   });
 </script>
 
 <div class="w-full ml-auto mr-auto min-h-screen relative overflow-hidden m:w-2/3 lg:w-3/4">
-  <Header {isDark} />
+  <Header {isDark} {currentLocale} />
   <Transition refresh={key}>
     <main>
       <slot />

@@ -1,0 +1,38 @@
+{
+  "common": {
+    "menu": {
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About"
+    },
+    "footer": "Made with Sveltekit and ❤️ by David Arenas © {date}"
+  },
+  "home": {
+    "head": "Dave136 | Inicio",
+    "title": "Hi! I'm David",
+    "subtitle": "Fullstack developer 💻 Using Typescript 😃"
+  },
+  "projects": {
+    "head": "Projects",
+    "title": "My projects",
+    "list": {
+      "connectable": {
+        "content": "GUI client for postgresSQL"
+      },
+      "compr": {
+        "content": "Post app made with Nestjs, Sveltekit and usage of monorepo pnpm system"
+      },
+      "switch-env": {
+        "content": "Simple CLI for switch between environments"
+      },
+      "notes": {
+        "content": "Simple and minimalist notes app"
+      }
+    }
+  },
+  "about": {
+    "head": "About",
+    "greating": "Hi!",
+    "description": "My name is David, i am 22 years old, full stack programmer, passionate about the world of technology, lover of music and programming. I love Linux, i script with python or bash and i'm learning Rust."
+  }
+}

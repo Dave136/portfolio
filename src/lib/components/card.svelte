@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { t } from 'svelte-i18n';
   export let link: string;
   export let image: string;
   export let name: string;
@@ -13,7 +14,7 @@
     >
       <div style="background-image: url({image});" class="w-full h-40 sm:h-52 bg-cover bg-left" />
       <h4 class="text-center text-lg mt-4 underline relative z-[1] sm:text-xl">{name}</h4>
-      <p class="p-4 text-center text-sm relative z-[1]">{content}</p>
+      <p class="p-4 text-center text-sm relative z-[1]">{$t(content)}</p>
       <div class="absolute bottom-4 w-full z-[1] lg:bottom-2">
         {#each tags as tag}
           <span

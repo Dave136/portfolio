@@ -1,0 +1,38 @@
+{
+  "common": {
+    "menu": {
+      "home": "Inicio",
+      "projects": "Proyectos",
+      "about": "Acerca"
+    },
+    "footer": "Hecho con Sveltekit y ❤️ por David Arenas © {date}"
+  },
+  "home": {
+    "head": "Dave136 | Inicio",
+    "title": "¡Hola! Soy David",
+    "subtitle": "Fullstack developer 💻 Usando Typescript 😃"
+  },
+  "projects": {
+    "head": "Proyectos",
+    "title": "Mis proyectos",
+    "list": {
+      "connectable": {
+        "content": "Cliente GUI para PostgreSQL"
+      },
+      "compr": {
+        "content": "Aplicación de blogs construida con Nestjs, Sveltekit con un sistema de monorepo"
+      },
+      "switch-env": {
+        "content": "Simple CLI para entre diferentes entornos"
+      },
+      "notes": {
+        "content": "Una aplicación de notas simple y minimalista"
+      }
+    }
+  },
+  "about": {
+    "head": "Acerca",
+    "greating": "¡Hola!",
+    "description": "Mi nombre es David, tengo 22 años, programador full stack, apasionado por el mundo de la tecnología, amante de la música y de la programación. Me encanta Linux, realizo scripts en python o bash y actualmente aprendo Rust."
+  }
+}

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { t } from 'svelte-i18n';
   import { fly } from 'svelte/transition';
   import Github from 'svelte-icons/io/IoLogoGithub.svelte';
   import LinkedIn from 'svelte-icons/io/IoLogoLinkedin.svelte';
@@ -23,7 +24,8 @@
       out:fly={{ duration: 100, y: 10 }}
     >
       <p class="text-sm">
-        Made with Sveltekit and ❤️ by David Arenas &copy; {new Date().getFullYear()}
+        <!-- Made with Sveltekit and ❤️ by David Arenas &copy; {new Date().getFullYear()} -->
+        {$t('common.footer', { values: { date: new Date().getFullYear() } })}
       </p>
     </div>
   </div>

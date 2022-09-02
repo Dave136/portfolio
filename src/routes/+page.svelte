@@ -1,9 +1,9 @@
-<script context="module" lang="ts">
-  export const prerender = true;
+<script lang="ts">
+  import { t } from 'svelte-i18n';
 </script>
 
 <svelte:head>
-  <title>Dave136 | Home</title>
+  <title>{$t('home.head')}</title>
   <meta name="description" content="My personal portfolio" />
 </svelte:head>
 
@@ -12,8 +12,8 @@
     <source srcset="me.jpg" media="(min-width: 800px)" />
     <img class="rounded-full w-48 h-48 sm:w-64 sm:h-64 object-cover" src="me.jpg" alt="Me" />
   </picture>
-  <h3 class="text-5xl mt-10 lg:mt-8">Hi! I'm David</h3>
+  <h3 class="text-5xl mt-10 lg:mt-8">{$t('home.title')}</h3>
   <p class="mt-8 text-lg text-center break-words px-8 sm:text-xl">
-    Fullstack developer 💻 Using Typescript 😃
+    {$t('home.subtitle')}
   </p>
 </section>
