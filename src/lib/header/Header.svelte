@@ -30,7 +30,7 @@
 
 <header class="flex py-6 m:py-12 justify-between items-center">
   <a href="/" class="z-10"><h3 class="text-2xl m:text-3xl ml-8">Dave136</h3></a>
-  <nav class="hidden mr-20 lg:block">
+  <nav class="hidden mr-20 lg:flex items-center">
     <a href="/" class="mr-4" class:underline={$page.url.pathname === '/'}>
       {$t('common.menu.home')}
     </a>
@@ -43,10 +43,12 @@
     <SelectLocale on:locale-changed={changeLocale} value={currentLocale} />
   </nav>
   <div
-    class="w-20 h-20 rounded-full flex justify-center items-center absolute right-16 lg:right-4 top-0 transition-colors active:bg-zinc-700 z-10"
-    on:click={toogleDark}
+    class="w-30 h-20 rounded-full flex justify-center items-center absolute right-16 lg:w-20 lg:right-6 lg:top-2 transition-colors active:bg-light-300 z-10"
   >
-    <div class="w-8 h-8">
+    <div class="mr-2 lg:hidden lg:mr-0">
+      <SelectLocale on:locale-changed={changeLocale} value={currentLocale} />
+    </div>
+    <div class="w-8 h-8 mr-4 lg:mr-0" on:click={toogleDark}>
       {#if isDark}
         <Sun />
       {:else}
@@ -54,11 +56,6 @@
       {/if}
     </div>
   </div>
-  {#if isOpen}
-    <div class="absolute bottom-24 flex w-full justify-center lg:hidden">
-      <SelectLocale on:locale-changed={changeLocale} value={currentLocale} />
-    </div>
-  {/if}
   <Burger on:click={() => (isOpen = !isOpen)} />
   <MobileMenu {isOpen} on:click={() => (isOpen = !isOpen)} />
 </header>

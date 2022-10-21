@@ -5,6 +5,10 @@
       "projects": "Proyectos",
       "about": "Acerca"
     },
+    "lang": {
+      "en": "Inglés",
+      "es": "Español"
+    },
     "footer": "Hecho con Sveltekit y ❤️ por David Arenas © {date}"
   },
   "home": {
