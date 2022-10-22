@@ -71,20 +71,24 @@
           <div class="py-1">
             <div role="menuitem" on:click={(e) => handleLocaleChange(e, 'en')}>
               <a
-                href="/"
+                href="#"
                 aria-current="page"
                 class="px-4 py-1 flex items-center whitespace-no-wrap text-dark-200"
                 class:font-semibold={isEnglishLang}
-                class:cursor-default={isEnglishLang}>{$t('common.lang.en')}</a
+                class:cursor-default={isEnglishLang}
               >
+                {$t('common.lang.en')}
+              </a>
             </div>
             <div role="menuitem" on:click={(e) => handleLocaleChange(e, 'es')}>
               <a
-                href="/es/"
+                href="#"
                 class="px-4 py-1 flex items-center whitespace-no-wrap"
                 class:font-semibold={!isEnglishLang}
-                class:cursor-default={!isEnglishLang}>{$t('common.lang.es')}</a
+                class:cursor-default={!isEnglishLang}
               >
+                {$t('common.lang.es')}
+              </a>
             </div>
           </div>
         </div>
