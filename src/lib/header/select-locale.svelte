@@ -2,24 +2,24 @@
   import { createEventDispatcher } from 'svelte';
   import { getLocaleFromNavigator, t } from 'svelte-i18n';
 
-  export let langValue = getLocaleFromNavigator();
+  export let value = getLocaleFromNavigator();
 
   let showMenu = '';
   let display = false;
   let isEnglishLang: boolean | null = null;
 
-  $: isEnglishLang = langValue?.includes('en') as boolean;
+  $: isEnglishLang = value?.includes('en') as boolean;
   $: showMenu = display ? 'flex' : 'hidden';
 
   const dispatch = createEventDispatcher();
 
   type WithTarget<Event, Target> = Event & { currentTarget: Target };
 
-  function handleLocaleChange(event: WithTarget<Event, HTMLSelectElement>, value: string) {
+  function handleLocaleChange(event: WithTarget<Event, HTMLSelectElement>, newValue: string) {
     event.preventDefault();
 
-    langValue = value;
-    dispatch('locale-changed', value);
+    value = newValue;
+    dispatch('locale-changed', newValue);
   }
 </script>
 
