@@ -65,7 +65,7 @@
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="options-menu"
-        class="overflow-y-auto rounded-md divide-y py-1 max-h-56 divide-gray-700 bg-secondary-darkest"
+        class="overflow-y-auto rounded-md divide-y py-1 max-h-56 divide-gray-700 bg-secondary dark:bg-secondary-alt"
       >
         <div class="divide-y divide-gray-700">
           <div class="py-1">
