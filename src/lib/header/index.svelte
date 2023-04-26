@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { crossfade } from 'svelte/transition';
+  import { quintOut } from 'svelte/easing';
   import { locale, t } from 'svelte-i18n';
   import MobileMenu from '$lib/components/mobile-menu.svelte';
   import Burger from './Burger.svelte';
@@ -10,6 +12,8 @@
   export let isDark = false;
   export let currentLocale = '';
   let isOpen = false;
+  let showLogo = false;
+  $: imageSrc = showLogo ? 'logo.svg' : 'me.jpg';
 
   const toogleDark = () => {
     isDark = !isDark;
@@ -26,10 +30,32 @@
     localStorage.setItem('locale', e.detail);
     locale.set(e.detail);
   };
+
+  const [send, receive] = crossfade({
+    duration: 500,
+    easing: quintOut,
+  });
 </script>
 
 <header class="flex py-6 m:py-12 justify-between items-center">
-  <a href="/" class="z-10"><h3 class="text-2xl m:text-3xl ml-8">Dave136</h3></a>
+  <a href="/" class="z-10 flex items-center">
+    <picture
+      class="ml-8"
+      on:mouseenter={() => (showLogo = true)}
+      on:mouseleave={() => (showLogo = false)}
+    >
+      <source srcset={imageSrc} media="(min-width: 150px)" />
+      <img
+        class="rounded-full w-12 h-12 sm:w-16 sm:h-16 object-cover transition ease"
+        src={imageSrc}
+        alt="Me"
+      />
+    </picture>
+    <div>
+      <h3 class="text-lg m:text-3xl ml-3">David Arenas</h3>
+      <h5 class="text-sm ml-3 text-gray-500">Typescript dev</h5>
+    </div>
+  </a>
   <nav class="hidden mr-20 lg:flex items-center">
     <a href="/" class="mr-4" class:underline={$page.url.pathname === '/'}>
       {$t('common.menu.home')}
