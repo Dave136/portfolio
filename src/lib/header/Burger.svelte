@@ -8,7 +8,9 @@
 >
   <div
     class={`w-full bg-black dark:bg-white h-[2px] transition ease  ${
-      isOpen ? 'translate-x-1 rotate-[45deg] translate-y-[10px]' : 'group-hover:translate-x-1'
+      isOpen
+        ? 'translate-x-1 rotate-[45deg] translate-y-[10px] group-hover:bg-zinc-400'
+        : 'group-hover:translate-x-1'
     }`}
   />
   <div
@@ -18,7 +20,9 @@
   />
   <div
     class={`w-full bg-black dark:bg-white h-[2px] -translate-x-1 transition ease ${
-      isOpen ? 'translate-x-0 -rotate-[45deg] -translate-y-1' : 'group-hover:translate-x-2'
+      isOpen
+        ? 'translate-x-0 -rotate-[45deg] -translate-y-1 group-hover:bg-zinc-400'
+        : 'group-hover:translate-x-2'
     }`}
   />
 </button>
