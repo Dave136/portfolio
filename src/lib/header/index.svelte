@@ -45,17 +45,17 @@
   <div
     class="w-30 h-20 rounded-full flex justify-center items-center absolute right-16 lg:w-20 lg:right-6 lg:top-2 transition-colors active:bg-light-300 z-10"
   >
-    <div class="mr-2 lg:hidden lg:mr-0">
+    <!-- <div class="mr-2 lg:hidden lg:mr-0">
       <SelectLocale on:locale-changed={changeLocale} value={currentLocale} />
-    </div>
-    <div class="w-8 h-8 mr-4 lg:mr-0" on:click={toogleDark}>
+    </div> -->
+    <!-- <div class="w-8 h-8 mr-4 lg:mr-0" on:click={toogleDark} tabindex="0">
       {#if isDark}
         <Sun />
       {:else}
         <Moon />
       {/if}
-    </div>
+    </div> -->
   </div>
-  <Burger on:click={() => (isOpen = !isOpen)} />
+  <Burger {isOpen} on:click={() => (isOpen = !isOpen)} />
   <MobileMenu {isOpen} on:click={() => (isOpen = !isOpen)} />
 </header>
