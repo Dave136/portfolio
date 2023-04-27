@@ -1,5 +1,5 @@
 <script lang="ts">
-  // import Footer from '$lib/footer.svelte';
+  import Footer from '$lib/footer.svelte';
   import Header from '$lib/header/index.svelte';
   // import Aside from '$lib/aside.svelte';
   import Transition from '$lib/transition.svelte';
@@ -47,5 +47,5 @@
       <slot />
     </main>
   </Transition>
-  <!-- <Footer /> -->
+  <Footer />
 </div>

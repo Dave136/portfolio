@@ -1,19 +1,19 @@
 <script lang="ts">
   import { t } from 'svelte-i18n';
   import { fly } from 'svelte/transition';
-  import Github from 'svelte-icons/io/IoLogoGithub.svelte';
-  import LinkedIn from 'svelte-icons/io/IoLogoLinkedin.svelte';
+  // import Github from 'svelte-icons/io/IoLogoGithub.svelte';
+  // import LinkedIn from 'svelte-icons/io/IoLogoLinkedin.svelte';
   // import Twitter from 'svelte-icons/io/IoLogoTwitter.svelte';
-  import Info from 'svelte-icons/io/IoIosInformationCircle.svelte';
+  // import Info from 'svelte-icons/io/IoIosInformationCircle.svelte';
 
-  import Email from 'svelte-icons/io/IoIosMail.svelte';
-  import Whatsapp from 'svelte-icons/io/IoLogoWhatsapp.svelte';
+  // import Email from 'svelte-icons/io/IoIosMail.svelte';
+  // import Whatsapp from 'svelte-icons/io/IoLogoWhatsapp.svelte';
 
   let showInfo = false;
 
-  const toggleInfo = () => {
-    showInfo = !showInfo;
-  };
+  // const toggleInfo = () => {
+  //   showInfo = !showInfo;
+  // };
 </script>
 
 {#if showInfo}
@@ -31,15 +31,21 @@
   </div>
 {/if}
 
-<footer class="absolute bottom-8 flex w-full justify-center">
-  <div class="flex justify-between items-center w-full px-12 sm:w-4/5 lg:w-1/2">
-    <a href="https://github.com/Dave136" target="_blank" class="w-8 h-8"><Github /></a>
+<footer class="py-8 bottom-8 flex w-full justify-center border-t border-t-zinc-700">
+  <div class="flex flex-col">
+    <p class="py-2 text-sm text-center text-gray-500">
+      <span class="font-bold text-white text-opacity-90">Built with</span> Sveltekit and ❤️
+    </p>
+    <p class="py-2 text-sm text-center text-gray-500">
+      <span class="font-bold text-white text-opacity-90">Made by</span> David Arenas
+    </p>
+    <p class="py-2 text-sm text-center text-gray-500">&copy; {new Date().getFullYear()}</p>
+    <!-- <a href="https://github.com/Dave136" target="_blank" class="w-8 h-8"><Github /></a>
     <a href="https://www.linkedin.com/in/david-arenas-72761b170/" target="_blank" class="w-8 h-8"
       ><LinkedIn /></a
     >
-    <!-- <a href="https://twitter.com/davejs4" target="_blank" class="w-8 h-8"><Twitter /></a> -->
     <span class="w-8 h-8"><Email /></span>
     <span class="w-8 h-8"><Whatsapp /></span>
-    <span class="w-8 h-8" on:click|preventDefault={toggleInfo}><Info /></span>
+    <span class="w-8 h-8" on:click|preventDefault={toggleInfo}><Info /></span> -->
   </div>
 </footer>
