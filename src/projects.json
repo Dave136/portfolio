@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Connectable 🚧",
+    "content": "projects.list.connectable.content",
+    "tags": ["Rust", "Tauri", "Svelte", "DaisyUI"],
+    "image": "connectable-app.png",
+    "link": "https://github.com/Dave136/connectable"
+  },
+  {
+    "name": "Compr 🚧",
+    "content": "projects.list.compr.content",
+    "tags": ["Nestjs", "Backend", "SvelteKit", "UnoCSS"],
+    "image": "compr-app.png",
+    "link": "https://github.com/Dave136/compr"
+  },
+  {
+    "name": "Switch-env 🚀",
+    "content": "projects.list.switch-env.content",
+    "tags": ["Rust", "Clap"],
+    "image": "switch-app.png",
+    "link": "https://github.com/Dave136/switch-env"
+  },
+  {
+    "name": "v-notes 🚀",
+    "content": "projects.list.notes.content",
+    "tags": ["Vue3", "TailwindCSS", "Pinia", "Vite"],
+    "image": "v-notes.png",
+    "link": "https://github.com/Dave136/v-notes"
+  },
+  {
+    "name": "vue-email 🚀",
+    "content": "projects.list.vmail.content",
+    "tags": ["Vue3", "Vite"],
+    "image": "v-notes.png",
+    "link": "https://github.com/Dave136/vue-email"
+  },
+  {
+    "name": "image-uploader 🚀",
+    "content": "projects.list.uploader.content",
+    "tags": ["React", "TailwindCSS", "Fastify", "Image"],
+    "image": "v-notes.png",
+    "link": "https://github.com/Dave136/vue-email"
+  },
+  {
+    "name": "Trello Clone 🚀",
+    "content": "projects.list.trello-clone.content",
+    "tags": ["React", "TailwindCSS", "Dnd-kit", "zustand"],
+    "image": "v-notes.png",
+    "link": "https://github.com/Dave136/vue-email"
+  }
+]

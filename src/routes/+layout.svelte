@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Footer from '$lib/footer.svelte';
+  // import Footer from '$lib/footer.svelte';
   import Header from '$lib/header/index.svelte';
-  import Aside from '$lib/aside.svelte';
+  // import Aside from '$lib/aside.svelte';
   import Transition from '$lib/transition.svelte';
   import { onMount } from 'svelte';
   import { getLocaleFromNavigator, locale } from 'svelte-i18n';
@@ -43,9 +43,9 @@
   <Header {isDark} {currentLocale} />
   <!-- <Aside /> -->
   <Transition refresh={key}>
-    <main>
+    <main class="mx-4">
       <slot />
     </main>
   </Transition>
-  <Footer />
+  <!-- <Footer /> -->
 </div>

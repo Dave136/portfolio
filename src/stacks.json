@@ -1,0 +1,50 @@
+[
+  {
+    "name": "VSCode",
+    "description": "Code Editor",
+    "src": "https://code.visualstudio.com/assets/images/code-stable.png",
+    "alt": "VSCode logo"
+  },
+  {
+    "name": "Typescript",
+    "description": "Javascript superset",
+    "src": "typescript.svg",
+    "alt": "Typescript Logo"
+  },
+  {
+    "name": "NodeJS",
+    "description": "Javascript runtime",
+    "src": "nodejs.svg",
+    "alt": "Nodejs Logo"
+  },
+  {
+    "name": "ExpressJS",
+    "description": "Nodejs framework",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+    "alt": "ExpressJS logo"
+  },
+  {
+    "name": "ReactJS",
+    "description": "Frontend JS library",
+    "src": "react-logo.svg",
+    "alt": "React Logo"
+  },
+  {
+    "name": "VueJS",
+    "description": "Javascript framework",
+    "src": "vuejs.svg",
+    "alt": "Vuejs Logo"
+  },
+  {
+    "name": "Svelte",
+    "description": "Javascript framework",
+    "src": "svelte-logo.svg",
+    "alt": "Svelte Logo"
+  },
+  {
+    "name": "Rust",
+    "description": "Programming language",
+    "src": "rust.svg",
+    "alt": "Rust Logo"
+  }
+]
