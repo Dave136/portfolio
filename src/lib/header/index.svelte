@@ -15,7 +15,7 @@
   let showLogo = false;
   $: imageSrc = showLogo ? 'logo.svg' : 'me.jpg';
 
-  const toogleDark = () => {
+  const toggleDark = () => {
     isDark = !isDark;
 
     if (isDark) {
@@ -83,5 +83,12 @@
     </div> -->
   </div>
   <Burger {isOpen} on:click={() => (isOpen = !isOpen)} />
-  <MobileMenu {isOpen} on:click={() => (isOpen = !isOpen)} />
+  <MobileMenu
+    {isDark}
+    {isOpen}
+    lang={currentLocale}
+    on:locale-changed={changeLocale}
+    on:toggleDark={toggleDark}
+    on:click={() => (isOpen = !isOpen)}
+  />
 </header>
