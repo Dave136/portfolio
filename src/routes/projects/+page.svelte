@@ -40,7 +40,7 @@
   ];
 </script>
 
-<template>
+<!-- <template>
   <section class="px-8 mt-4 sm:mt-10 lg:mt-4">
     <h3 class="text-2xl text-center sm:text-3xl">
       {$t('projects.title')}
@@ -51,4 +51,26 @@
       {/each}
     </CardWrapper>
   </section>
-</template>
+</template> -->
+
+<section class="flex flex-col mx-4 mt-8 lg:mt-6 mb-12">
+  <p class="mt-12 mb-6 font-bold">Experience</p>
+  <ul class="grid gap-12">
+    {#each projects.slice(0, 4) as project}
+      <li>
+        <a class="flex gap-4" href={project.link} target="_blank">
+          <img class="w-36 rounded-lg" src={project.image} alt="" />
+          <div>
+            <h3 class="font-bold">{project.name}</h3>
+            <p class="text-gray-400 text-xs mb-3">{$t(project.content)}</p>
+            {#each project.tags as tag}
+              <span class="px-3 mr-1 border border-gray-700 rounded-md text-gray-500 text-xs"
+                >{tag}</span
+              >
+            {/each}
+          </div>
+        </a>
+      </li>
+    {/each}
+  </ul>
+</section>
