@@ -1,19 +1,8 @@
 <script lang="ts">
   import { t } from 'svelte-i18n';
   import { fly } from 'svelte/transition';
-  // import Github from 'svelte-icons/io/IoLogoGithub.svelte';
-  // import LinkedIn from 'svelte-icons/io/IoLogoLinkedin.svelte';
-  // import Twitter from 'svelte-icons/io/IoLogoTwitter.svelte';
-  // import Info from 'svelte-icons/io/IoIosInformationCircle.svelte';
-
-  // import Email from 'svelte-icons/io/IoIosMail.svelte';
-  // import Whatsapp from 'svelte-icons/io/IoLogoWhatsapp.svelte';
 
   let showInfo = false;
-
-  // const toggleInfo = () => {
-  //   showInfo = !showInfo;
-  // };
 </script>
 
 {#if showInfo}
@@ -40,12 +29,5 @@
       <span class="font-bold text-white text-opacity-90">Made by</span> David Arenas
     </p>
     <p class="py-2 text-sm text-center text-gray-500">&copy; {new Date().getFullYear()}</p>
-    <!-- <a href="https://github.com/Dave136" target="_blank" class="w-8 h-8"><Github /></a>
-    <a href="https://www.linkedin.com/in/david-arenas-72761b170/" target="_blank" class="w-8 h-8"
-      ><LinkedIn /></a
-    >
-    <span class="w-8 h-8"><Email /></span>
-    <span class="w-8 h-8"><Whatsapp /></span>
-    <span class="w-8 h-8" on:click|preventDefault={toggleInfo}><Info /></span> -->
   </div>
 </footer>
