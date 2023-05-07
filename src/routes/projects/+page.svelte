@@ -53,8 +53,8 @@
   </section>
 </template> -->
 
-<section class="flex flex-col mx-4 mt-8 lg:mt-6 mb-12">
-  <p class="mt-12 mb-6 font-bold">Experience</p>
+<section class="flex flex-col mx-4 mt-0 lg:mt-6 mb-12">
+  <h2 class="mt-12 mb-6 font-bold text-3xl">Projects</h2>
   <ul class="grid gap-12">
     {#each projects.slice(0, 4) as project}
       <li>
