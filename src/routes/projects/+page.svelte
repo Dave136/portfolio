@@ -1,43 +1,44 @@
 <script lang="ts">
   import { t } from 'svelte-i18n';
-  import CardWrapper from '$lib/components/card-wrapper.svelte';
-  import Card from '$lib/components/card.svelte';
+  // import CardWrapper from '$lib/components/card-wrapper.svelte';
+  // import Card from '$lib/components/card.svelte';
+  import projects from '../../projects.json';
 
   // TODO: integrate with github
-  let projects = [
-    {
-      name: 'Connectable 🚧',
-      // content: 'GUI client for postgresSQL',
-      content: 'projects.list.connectable.content',
-      tags: ['Rust', 'Tauri', 'Svelte', 'DaisyUI'],
-      image: 'connectable-app.png',
-      link: 'https://github.com/Dave136/connectable',
-    },
-    {
-      name: 'Compr 🚧',
-      // content: 'Post app made with Nestjs, Sveltekit and monorepo pnpm system',
-      content: 'projects.list.compr.content',
-      tags: ['Nestjs', 'Backend', 'SvelteKit', 'UnoCSS'],
-      image: 'compr-app.png',
-      link: 'https://github.com/Dave136/compr',
-    },
-    {
-      name: 'Switch-env 🚀',
-      // content: 'Simple CLI for switch between environments',
-      content: 'projects.list.switch-env.content',
-      tags: ['Rust', 'Clap'],
-      image: 'switch-app.png',
-      link: 'https://github.com/Dave136/switch-env',
-    },
-    {
-      name: 'v-notes 🚀',
-      // content: 'Simple and minimalist notes app',
-      content: 'projects.list.notes.content',
-      tags: ['Vue3', 'TailwindCSS', 'Pinia', 'Vite'],
-      image: 'v-notes.png',
-      link: 'https://github.com/Dave136/v-notes',
-    },
-  ];
+  // let projects = [
+  //   {
+  //     name: 'Connectable 🚧',
+  //     // content: 'GUI client for postgresSQL',
+  //     content: 'projects.list.connectable.content',
+  //     tags: ['Rust', 'Tauri', 'Svelte', 'DaisyUI'],
+  //     image: 'connectable-app.png',
+  //     link: 'https://github.com/Dave136/connectable',
+  //   },
+  //   {
+  //     name: 'Compr 🚧',
+  //     // content: 'Post app made with Nestjs, Sveltekit and monorepo pnpm system',
+  //     content: 'projects.list.compr.content',
+  //     tags: ['Nestjs', 'Backend', 'SvelteKit', 'UnoCSS'],
+  //     image: 'compr-app.png',
+  //     link: 'https://github.com/Dave136/compr',
+  //   },
+  //   {
+  //     name: 'Switch-env 🚀',
+  //     // content: 'Simple CLI for switch between environments',
+  //     content: 'projects.list.switch-env.content',
+  //     tags: ['Rust', 'Clap'],
+  //     image: 'switch-app.png',
+  //     link: 'https://github.com/Dave136/switch-env',
+  //   },
+  //   {
+  //     name: 'v-notes 🚀',
+  //     // content: 'Simple and minimalist notes app',
+  //     content: 'projects.list.notes.content',
+  //     tags: ['Vue3', 'TailwindCSS', 'Pinia', 'Vite'],
+  //     image: 'v-notes.png',
+  //     link: 'https://github.com/Dave136/v-notes',
+  //   },
+  // ];
 </script>
 
 <!-- <template>
@@ -56,7 +57,7 @@
 <section class="flex flex-col mx-4 mt-0 lg:mt-6 mb-12">
   <h2 class="mt-12 mb-6 font-bold text-3xl">Projects</h2>
   <ul class="grid gap-12">
-    {#each projects.slice(0, 4) as project}
+    {#each projects as project}
       <li>
         <a class="flex gap-4" href={project.link} target="_blank">
           <img class="w-36 rounded-lg" src={project.image} alt="" />
