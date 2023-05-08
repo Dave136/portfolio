@@ -39,13 +39,13 @@
   });
 </script>
 
-<div class="w-full mx-auto min-h-screen relative overflow-hidden m:w-2/3 lg:w-3/4">
+<div class="w-full flex flex-col mx-auto min-h-screen relative overflow-hidden m:w-2/3 lg:w-3/4">
   <Header {isDark} {currentLocale} />
   <!-- <Aside /> -->
-  <Transition refresh={key}>
-    <main class="mx-4">
+  <main class="mx-4 flex-1">
+    <Transition refresh={key}>
       <slot />
-    </main>
-  </Transition>
+    </Transition>
+  </main>
   <Footer />
 </div>
