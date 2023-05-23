@@ -31,6 +31,15 @@
       },
       "notes": {
         "content": "Una aplicación de notas simple y minimalista"
+      },
+      "vmail": {
+        "content": "Libreria para construir template de email con vue3"
+      },
+      "uploader": {
+        "content": "Simple cargador de imagenes escrito en React"
+      },
+      "trello-clone": {
+        "content": "Clone de la aplicacion de Trello construido con React y @dnd/kit"
       }
     }
   },

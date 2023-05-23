@@ -31,6 +31,15 @@
       },
       "notes": {
         "content": "Simple and minimalist notes app"
+      },
+      "vmail": {
+        "content": "Library to build email templates with vue3"
+      },
+      "uploader": {
+        "content": "Simple file uploader written on React"
+      },
+      "trello-clone": {
+        "content": "Trello clone app built with React and @dnd/kit"
       }
     }
   },

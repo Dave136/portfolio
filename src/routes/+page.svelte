@@ -26,10 +26,10 @@
   <ul class="grid gap-12">
     {#each projects.slice(0, 4) as project}
       <li>
-        <a class="flex gap-4" href={project.link} target="_blank">
-          <img class="w-36 rounded-lg" src={project.image} alt="" />
+        <a class="flex flex-col gap-4" href={project.link} target="_blank">
+          <img class="rounded-lg w-full" src={project.image} alt="" />
           <div>
-            <h3 class="font-bold">{project.name}</h3>
+            <h3 class="font-bold mb-2">{project.name}</h3>
             <p class="text-gray-400 text-xs mb-3">{$t(project.content)}</p>
             {#each project.tags as tag}
               <span class="px-3 mr-1 border border-gray-700 rounded-md text-gray-500 text-xs"
