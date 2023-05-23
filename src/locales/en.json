@@ -45,6 +45,7 @@
   },
   "about": {
     "head": "About",
+    "title": "About me",
     "greating": "Hi!",
     "description": "My name is David, i am 22 years old, full stack programmer, passionate about the world of technology, lover of music and programming. I love Linux, i script with python or bash and i'm learning Rust."
   }

@@ -45,6 +45,7 @@
   },
   "about": {
     "head": "Acerca",
+    "title": "Acerca de mi",
     "greating": "¡Hola!",
     "description": "Mi nombre es David, tengo 22 años, programador full stack, apasionado por el mundo de la tecnología, amante de la música y de la programación. Me encanta Linux, realizo scripts en python o bash y actualmente aprendo Rust."
   }
