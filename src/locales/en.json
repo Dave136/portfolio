@@ -12,7 +12,7 @@
     "footer": "Made with Sveltekit and ❤️ by David Arenas © {date}"
   },
   "home": {
-    "head": "Dave136 | Inicio",
+    "head": "Dave | Inicio",
     "title": "Hi! I'm David",
     "subtitle": "Fullstack developer 💻 Using Typescript 😃"
   },
