@@ -1,3 +1,5 @@
+import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
@@ -18,5 +20,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [iconsPlugin({
+    collections: getIconCollections(['heroicons', 'ph'])
+  })],
 };
