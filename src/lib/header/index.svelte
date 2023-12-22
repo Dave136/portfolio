@@ -5,8 +5,8 @@
   import MobileMenu from '$lib/components/mobile-menu.svelte';
   import Burger from './Burger.svelte';
   import SelectLocale from './select-locale.svelte';
-  import Sun from 'svelte-icons/io/IoIosSunny.svelte';
-  import Moon from 'svelte-icons/io/IoIosMoon.svelte';
+  // import Sun from 'svelte-icons/io/IoIosSunny.svelte';
+  // import Moon from 'svelte-icons/io/IoIosMoon.svelte';
   import { page } from '$app/stores';
 
   export let isDark = false;

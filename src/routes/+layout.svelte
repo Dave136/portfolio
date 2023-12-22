@@ -6,6 +6,7 @@
   import { onMount } from 'svelte';
   import { getLocaleFromNavigator, locale } from 'svelte-i18n';
   import '../app.css';
+  import Menu from '$lib/components/menu/Menu.svelte';
 
   let isDark = false;
   let currentLocale = '';
@@ -47,5 +48,6 @@
       <slot />
     </Transition>
   </main>
-  <Footer />
+  <!-- <Footer /> -->
+  <Menu />
 </div>

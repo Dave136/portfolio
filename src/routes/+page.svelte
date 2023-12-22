@@ -9,6 +9,7 @@
   <meta name="description" content="My personal portfolio" />
 </svelte:head>
 
+<!-- 
 <section class="flex flex-col mx-4 mt-8 lg:mt-6 mb-12">
   <h3 class="text-5xl lg:mt-8">{$t('home.title')}</h3>
   <p class="mt-8 text-lg break-words sm:text-xl">
@@ -59,4 +60,4 @@
       >
     </li>
   </ul>
-</section>
+</section> -->

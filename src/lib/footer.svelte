@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
   import { t } from 'svelte-i18n';
   import { fly } from 'svelte/transition';
 
@@ -13,7 +13,6 @@
       out:fly={{ duration: 100, y: 10 }}
     >
       <p class="text-sm">
-        <!-- Made with Sveltekit and ❤️ by David Arenas &copy; {new Date().getFullYear()} -->
         {$t('common.footer', { values: { date: new Date().getFullYear() } })}
       </p>
     </div>
@@ -30,4 +29,4 @@
     </p>
     <p class="py-2 text-sm text-center text-gray-500">&copy; {new Date().getFullYear()}</p>
   </div>
-</footer>
+</footer> -->
